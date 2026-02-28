@@ -104,10 +104,10 @@ set COMMANDLINE_ARGS=--xformers --medvram --opt-split-attention --api --listen
 
 ## 🎬 Video Generation Strategy
 
-### Short Clips (2–4 seconds)
+### Short Clips (2 seconds)
 - Uses AnimateDiff directly
-- 16–24 frames at 512x768 or 768x512
-- Best motion quality on 8GB VRAM
+- Locked to exactly **16 frames** for AnimateDiff v3 (prevents noise generation)
+- Optimal motion quality on 8GB VRAM at 8 FPS
 
 ### Long Videos (30 sec – 5 min+)
 - SilkDream generates multiple short clips automatically
@@ -152,8 +152,8 @@ SilkDream/
 
 ## 🚀 SilkDream Features
 
-- ✅ **Text-to-Image** with full parameter control
-- ✅ **Short Video** via AnimateDiff
+- ✅ **Magic Enhance** — OpenRouter LLM integration for automatic cinematic prompt un-censoring
+- ✅ **Short Video** via AnimateDiff (Locked 16-frames for stability)
 - ✅ **Long Video** via automatic clip stitching
 - ✅ **Gallery** — browse all past generations
 - ✅ **Model Switcher** — change checkpoint from UI
