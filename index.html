@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SilkDream — AI Generation Studio</title>
+  <meta name="description"
+    content="SilkDream — Local NSFW AI image and video generation studio. Private, unlimited, unrestricted." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M65,35 C65,20 40,20 40,35 C40,50 65,55 65,70 C65,85 35,85 35,70" stroke="white" stroke-width="12"
+              stroke-linecap="round" fill="none" />
+            <path d="M35,35 C35,20 40,20 40,35" stroke="white" stroke-width="12" stroke-linecap="round" fill="none"
+              opacity="0.3" />
+            <circle cx="65" cy="35" r="6" fill="white" />
+            <circle cx="35" cy="70" r="6" fill="white" />
+          </svg>
+        </div>
+        <span class="logo-text">SilkDream</span>
+      </div>
+
+      <div class="status-badge" id="statusBadge">
+        <span class="status-dot"></span>
+        <span class="status-text">Connecting...</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="nav-item active" data-page="dashboard" id="nav-dashboard">
+          <span class="nav-icon">⬡</span>
+          <span>Dashboard</span>
+        </a>
+        <a class="nav-item" data-page="generate" id="nav-generate">
+          <span class="nav-icon">✦</span>
+          <span>Generate</span>
+        </a>
+        <a class="nav-item" data-page="animate" id="nav-animate">
+          <span class="nav-icon">▷</span>
+          <span>Short Video</span>
+        </a>
+        <a class="nav-item" data-page="longvideo" id="nav-longvideo">
+          <span class="nav-icon">⬛</span>
+          <span>Long Video</span>
+        </a>
+        <a class="nav-item" data-page="gallery" id="nav-gallery">
+          <span class="nav-icon">◈</span>
+          <span>Gallery</span>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="gpu-info">
+          <span class="gpu-icon">⬡</span>
+          <div>
+            <div class="gpu-name" id="sidebarGpuName">Detecting...</div>
+            <div class="gpu-vram" id="sidebarGpuVram">- GB VRAM</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+      <!-- Pages rendered here by JS -->
+    </main>
+  </div>
+
+  <script src="src/components/sidebar.js"></script>
+  <script src="src/pages/dashboard.js"></script>
+  <script src="src/pages/generate.js"></script>
+  <script src="src/pages/animate.js"></script>
+  <script src="src/pages/longvideo.js"></script>
+  <script src="src/pages/gallery.js"></script>
+  <script src="src/app.js"></script>
+</body>
+
+</html>

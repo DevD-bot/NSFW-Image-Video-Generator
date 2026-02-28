@@ -1,0 +1,7 @@
+node_modules/
+outputs/
+history.json
+.env
+api_keys.txt
+*.log
+.DS_Store
