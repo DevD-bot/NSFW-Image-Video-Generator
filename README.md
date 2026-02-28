@@ -3,6 +3,11 @@
 > **Private. Unlimited. Unrestricted.**
 > A premium local NSFW AI image & video generation platform powered by Stable Diffusion, AnimateDiff, and Node.js.
 
+***
+
+> ⚠️ **Disclaimer: For Educational Purposes Only**
+> This project is created strictly for educational purposes to demonstrate generative AI pipelines, stable diffusion integration, and local API management. It is not intended for commercial use. See the `LICENSE` file for restriction details.
+
 ---
 
 ## ⚡ Local Machine Installation & Usage
